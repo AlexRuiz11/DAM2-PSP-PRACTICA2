@@ -8,8 +8,8 @@ public class MAIN {
 	    public static void main(String[] args)  throws InterruptedException{
 	
 
-	    	int NumVueltas=1;
-	    	int NumPd=100;
+	    	int NumVueltas=2;
+	    	int NumPd=101;
 	    	int NumCS=100;
 
 	    	

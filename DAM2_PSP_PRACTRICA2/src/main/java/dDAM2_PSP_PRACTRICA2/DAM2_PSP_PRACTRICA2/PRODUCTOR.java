@@ -8,14 +8,17 @@ public class PRODUCTOR extends Thread {
 	
 		private Pila pila;
 		private Random random = new Random();
-		static int id;
+	
 		int numVueltas;
 		
+		private static int count = 0; 
+		   private int id;
 		
 		public PRODUCTOR (int numVueltas, Pila pila){
 			this.pila = pila;
-			this.numVueltas=numVueltas;
-		
+			this.numVueltas=numVueltas;	
+			
+			id= count++;
 		}
 		
 		
@@ -29,7 +32,7 @@ public class PRODUCTOR extends Thread {
 			
 	            int c =  random.nextInt(100)+1;
 	            pila.poner(c);
-	            System.out.println("Productor  "+id++ +": "+c);
+	            System.out.println("Productor  "+id  +": "+c);
 	            
 	            
 	            
@@ -37,7 +40,8 @@ public class PRODUCTOR extends Thread {
 		    	
 		}
 			
-		
+
+}
 
 		
-}
+
