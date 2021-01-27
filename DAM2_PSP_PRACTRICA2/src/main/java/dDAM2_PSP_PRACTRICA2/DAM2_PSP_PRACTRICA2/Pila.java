@@ -7,7 +7,7 @@ public class Pila {
 
 			
 	
-	ArrayList<Integer> pila  = new ArrayList<Integer>(20); // Create an ArrayList object
+	ArrayList<Integer> pila  = new ArrayList<Integer>(20); 
 	private int c;
 
 	
